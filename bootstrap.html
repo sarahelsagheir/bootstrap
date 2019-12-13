@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+
+  <script src="jquery-3.2.1.min.js"></script>
+  <script src="popper.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+  <style>
+    .carousel-item {
+      height: 85vh;
+      min-height: 350px;
+      background: no-repeat center center scroll;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    footer {
+      background-color: rgb(255, 208, 0);
+
+    }
+
+    .top-nav-collapse {
+      background-color: #424f95 !important;
+    }
+
+    .navbar:not(.top-nav-collapse) {
+      background: transparent !important;
+    }
+
+    .navbar .search-form {
+      margin: 0;
+      padding: 0;
+      margin-left: 30px;
+      margin-top: 5px;
+    }
+
+    input.form-control {
+      border: none;
+      border-bottom: 1px solid black;
+      background-color: transparent;
+    }
+  </style>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Cardboard</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link text-warning" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              services </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: transparent;">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">Contact</a>
+          </li>
+        </ul>
+        <form class="search-form searchbar ml-auto" role="search" id="hiddenSearchBox"  action="" method="get">
+          <div class="input-group">
+            <!-- <input type="hidden" name="id" value="63"> -->
+            <input type="search" name="keywords" class="form-control d-none d-md-block" placeholder="Search..">
+            <div class="input-group-btn">
+              <!-- <button type="submit" class="btn btn-default" data-toggle="searchbar" data-target="#hiddenSearchBox">
+                <span class="glyphicon glyphicon-search"></span> <span class="sr-only">Submit</span>
+              </button> -->
+            </div>
+          </div>
+        </form>
+      </div>
+  </nav>
+  <header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active" style="background-image: url('2.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            <h3 class="display-4"><strong> create awesome websites</strong></h3>
+            <p class="lead">This is a description for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('4.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            <h3 class="display-4"><strong> create awesome websites</strong></h3>
+            <p class="lead">This is a description for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('5.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            <h3 class="display-4"><strong> create awesome websites</strong></h3>
+            <h1 class="lead">we create awesome websites.</h1>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </header>
+
+  <section class="magazine-section my-5">
+    <h2 class="h1-responsive font-weight-bold text-center my-5">Latest work</h2>
+    <p class="text-center w-responsive mx-auto mb-5">Duis aute irure dolor in reprehenderit in voluptate velit
+      <br>Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
+    <p class="text-warning text-center w-responsive mx-auto my-5">view all portifolio</p>
+  </section>
+  <section>
+
+    <div class="container-fluid " style="margin-bottom: 50px;">
+
+      <div class="row">
+        <div class="col">
+          <img src="7.jpg" class="img-fluid ">
+        </div>
+        <div class="col">
+          <img src="8.jpg" alt="" class="img-fluid">
+
+        </div>
+      </div>
+      <div class="row " style="margin-top: 10px;">
+
+        <div class="col"><img src="9.jpg" class="img-fluid">
+        </div>
+        <div class="col ">
+          <img src="4.jpg" class="img-fluid">
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section style="margin-top: 150px;">
+
+    <div class="container ">
+
+      <div class="row">
+        <div class="col">
+          <img src="1.jpg" class="img-fluid ">
+        </div>
+        <div class="col align-center-text" style="margin-left: 50px;">
+          <p class="text-warning">who we are</p>
+          <h2>Do things that Matters . Plan . Create . Grow</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, quia? Laboriosam sit ratione eos nam
+            voluptatum architecto, fuga non a porro sapiente ullam obcaecati quasi deserunt impedit vitae, ab incidunt.
+          </p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias sequi et consequuntur, aliquam
+            cupiditate consequatur praesentium perferendis facere similique rep</p>
+          <button type="button" class="btn btn-outline-dark">Learn More</button>
+        </div>
+  </section>
+  <div class="container " style="margin-top:150px; margin-bottom: 100px;">
+    <div class="row ">
+      <div class="col-sm-3 text-left">
+        <img src="1497573.png" class="d-block" style="width:25%;">
+<br>
+        <h5><strong>Designing</strong></h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      </div>
+      <div class="col-sm-3">
+        <img src="968295.png" class="d-block" style="width:25%">
+<br>
+        <h5><strong>Branding indentity</strong></h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      </div>
+      <div class="col-sm-3">
+        <img src="1849494.png" class="d-block" style="width:25%">
+<br>
+        <h5><strong>mobile application</strong> </h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      </div>
+      <div class="col-sm-3">
+        <img src="88169.png" class="d-block" style="width:25%">
+      <br>
+        <h5><strong>search engine</strong></h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      </div>
+    </div>
+  </div>
+  </div>
+  <footer class="page-footer font-small unique-color-dark">
+
+    <div style="background-color: #f3b406 ;   ">
+      <div class="container">
+        <div class="row py-4  align-items-center">
+          <div class=" container text-center text-white ">
+            <h5>Let's do more togther</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisici</p>
+            <button type="button" class="btn btn-outline-light"> Get in Touch!</button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container text-center text-md-left mt-5">
+
+      <div class="row mt-3">
+
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+          <h6 class="text-uppercase font-weight-bold">About Craft </h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+            consectetur
+            adipisicing elit.</p>
+
+        </div>
+
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <h6 class="text-uppercase font-weight-bold">Contact Info</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <img src="2144.png" width="20px">
+            New York, NY 10012, US</p>
+          <p>
+            <img src="25236.png" width="20px">
+             info@example.com</p>
+
+          <p>
+            <img src="25453.png" width="20px">
+             + 01 234 567 89</p>
+
+        </div>
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase font-weight-bold">Quick links</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a href="#!">About</a>
+          </p>
+          <p>
+            <a href="#!">Terms of Use</a>
+          </p>
+          <p>
+            <a href="#!">Disclaimers</a>
+          </p>
+          <p>
+            <a href="#!">Contact</a>
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="footer-copyright text-center py-3">© 2019 Copyright All rights reserved | This template is made with
+      <img src="16.png" width="20px">
+      by <a href="Colorlib"> Colorlib</a>
+    </div>
+
+  </footer>
+
+
+</body>
+
+</html>
